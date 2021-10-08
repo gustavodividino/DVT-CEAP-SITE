@@ -1,0 +1,87 @@
+/* Nav Bar Geral */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+  background: var(--main-bg-color);
+  color: var(--main-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 101;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+}
+/* Fim NavBar */
+
+/* LogoMarca */
+.navbar > .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar > .logo > img {
+  height: 35px;
+}
+
+/* Fim LogoMarca */
+
+/* NavBar Search */
+.navbar > .search {
+  position: relative;
+  margin: auto;
+  width: 50%;
+}
+
+/* Input do Search */
+.navbar > .search > input {
+  background: var(--second-bg-color);
+  border: none;
+  padding: 12px 50px 12px 50px;
+  width: 100%;
+  outline: none;
+  color: var(--main-color);
+  border-radius: 20px;
+}
+
+/* Icone do Search */
+.navbar > .search > i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: var(--second-color);
+  cursor: pointer;
+}
+/* FIM - NavBar Search */
+
+/* NavBar Menu */
+.navbar > nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  cursor: pointer;
+}
+
+/* Itens do menu de navegacao */
+.navbar > nav > ul > li > i {
+  font-size: 22px;
+}
+
+/* Imagem do profile */
+.navbar > nav > ul > li > img {
+  height: 20px;
+}
+/* Fim - NavBar Menu */

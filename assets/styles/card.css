@@ -1,0 +1,75 @@
+.card {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+  padding: 10px;
+  height: 80px;
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+
+  overflow: hidden;
+}
+
+.card > i {
+  font-size: 45px;
+}
+
+.divider {
+  content: "";
+  border-left: 2px solid #dadde6;
+  height: 100%;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 15px;
+}
+
+.card > div > small {
+  font-size: 14px;
+}
+
+.card > div > p {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.cardBrown {
+  border-left: 4px solid brown;
+}
+
+.cardGreen {
+  border-left: 4px solid green;
+}
+
+.cardBlue {
+  border-left: 4px solid blue;
+}
+
+.cardGray {
+  border-left: 4px solid gray;
+}
+
+.iconBrown {
+  color: brown;
+}
+
+.iconGreen {
+  color: green;
+}
+
+.iconBlue {
+  color: blue;
+}
+
+.iconGray {
+  color: gray;
+}

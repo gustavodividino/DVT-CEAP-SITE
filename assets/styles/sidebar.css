@@ -1,0 +1,80 @@
+.sidebar {
+  width: 0;                     /*Inicia em 0 pois o menu ficara invisivel*/
+  height: 100vh;
+  position: fixed;
+  margin-top: 50px;
+  background: var(--main-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+  overflow: hidden;
+  z-index: 100;
+  transition: width 0.5s;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+/* Menu */
+.sidebar > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Titulo Menu */
+.sidebar > ul > .title {
+  font-size: 12px;
+  display: flex;
+  justify-content: left;
+  margin-left: 25px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Lista Menu */
+.sidebar > ul > li {
+  font-size: 15px;
+  width: 100%;
+}
+
+/* Link Menu */
+.sidebar > ul > li > a {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.sidebar > ul > li > a > div {
+  min-width: 82px;
+  height: 50px;
+  position: relative;
+}
+
+/* Icone do Menu */
+.sidebar > ul > li > a i {
+  font-size: 1.5rem;
+  color: var(--second-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Efeito do menu quando passa o mouse por cima */
+.sidebar > ul > li > a:hover {
+    background: var(--second-bg-color);
+
+}
+
+
+/* Aumenta o tamanho quando expandir*/
+.sidebar-expand .sidebar {
+  width: 250px; /* Aumenta o tamanho do menu */
+}
+

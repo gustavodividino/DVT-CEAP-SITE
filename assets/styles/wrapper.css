@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 10px;
+  padding-top: 75px;
+  background: var(--second-bg-color);
+  transition: margin-left 0.5s;
+}
+
+/* Empurra o content quando expandir*/
+.sidebar-expand .wrapper {
+  margin-left: 250px; /* Empurra o Wrapper quando o menu abrir */
+}
